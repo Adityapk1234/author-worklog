@@ -1,0 +1,118 @@
+// src/styles/App.scss
+
+@import 'variables';
+
+// Your styles for App component
+.App {
+    padding: 20px;
+    // Add more styles as needed
+    // App.scss
+
+    .author-selector {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .author-card {
+        cursor: pointer;
+        border: 1px solid #ddd;
+        border-radius: 0.25rem;
+        background-color: #fff;
+        box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s, box-shadow 0.3s;
+
+        &:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+        }
+
+        &.active {
+            border-color: #007bff;
+            background-color: #e9f4ff;
+        }
+
+        .author-card-body {
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .author-card-title {
+            font-size: 1.25rem;
+            font-weight: 500;
+        }
+    }
+
+    .dashboard-title {
+        font-size: 1.8rem;
+        font-weight: 700;
+        margin-top: 20px;
+    }
+
+    .dashboard-title span {
+        color: #007bff;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+
+    th {
+        background: linear-gradient(180deg, #007bff, #0056b3);
+        color: #fff;
+        padding: 10px;
+        text-align: left;
+    }
+
+    td {
+        padding: 10px;
+        border: 1px solid #ddd;
+    }
+
+    tr:hover {
+        background-color: #f1f1f1;
+    }
+
+    h1 {
+        font-family: 'Roboto', sans-serif;
+        /* Use a clean and modern font */
+        font-size: 2.5rem;
+        /* Increase the font size */
+        font-weight: 700;
+        /* Make the font bold */
+        color: #333;
+        /* Dark grey color for the text */
+        text-align: center;
+        /* Center the text */
+        margin-bottom: 20px;
+        /* Add space below the heading */
+        text-transform: uppercase;
+        /* Make the text all uppercase */
+        letter-spacing: 2px;
+        /* Increase the space between letters */
+        background: linear-gradient(90deg, #007bff, #0056b3);
+        /* Add a gradient background */
+        -webkit-background-clip: text;
+        /* Clip the gradient to the text */
+        -webkit-text-fill-color: transparent;
+        /* Fill the text with the gradient */
+        position: relative;
+    }
+
+    h1::after {
+        content: '';
+        display: block;
+        width: 100px;
+        height: 4px;
+        background-color: #007bff;
+        /* Line color */
+        margin: 10px auto 0 auto;
+        /* Center the line */
+        border-radius: 2px;
+        /* Round the corners */
+    }
+
+
+}
