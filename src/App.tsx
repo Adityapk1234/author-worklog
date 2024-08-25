@@ -11,7 +11,7 @@ const App: React.FC = () => {
 
 	useEffect(() => {
 		// Fetch JSON data from the public directory
-		fetch('/sample-data.json')
+		fetch(`${process.env.PUBLIC_URL}/sample-data.json`)
 			.then(response => response.json())
 			.then((data: { AuthorWorklog: AuthorWorklogData }) => {
 				const transformedData: AuthorWorklogData = {
